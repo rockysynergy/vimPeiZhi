@@ -13,6 +13,7 @@ set incsearch
 set nopaste
 set autoindent
 set fileformats=unix,dos
+set nocompatible
 syntax on
 filetype on
 filetype indent on 

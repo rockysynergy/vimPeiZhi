@@ -25,9 +25,6 @@
 [submodule "bundle/zencoding-vim"]
 	path = bundle/zencoding-vim
 	url = https://github.com/mattn/zencoding-vim.git
-[submodule "bundle/vimwiki.git"]
-	path = bundle/vimwiki.git
-	url = git://github.com/weierophinney/vimwiki.git
 [submodule "bundle/vim-surround"]
 	path = bundle/vim-surround
 	url = https://github.com/tpope/vim-surround.git
