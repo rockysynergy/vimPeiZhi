@@ -23,7 +23,7 @@ autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 " " check syntax with Ctrl + L
 autocmd FileType php noremap <C-L> :!/usr/bin/env php -l %<CR>
 "++ The vim-task configuration
-autocmd BufNewFile,BufRead todo.txt,*.task,*.tasks,Tasks.wiki  setfiletype task
+autocmd BufNewFile,BufRead todo.txt,*.task,*.tasks setfiletype task
 inoremap <silent> <buffer> <Leader>m <ESC>:call Toggle_task_status()<CR>i
 noremap <silent> <buffer> <Leader>m :call Toggle_task_status()<CR>
 
