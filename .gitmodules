@@ -34,3 +34,9 @@
 [submodule "bundle/vim-typoscript"]
 	path = bundle/vim-typoscript
 	url = https://github.com/nebelschwade/typoscript-vim.git
+[submodule "bundle/html5.vim"]
+	path = bundle/html5.vim
+	url = https://github.com/othree/html5.vim.git
+[submodule "bundle/command-t"]
+	path = bundle/command-t
+	url = git://git.wincent.com/command-t.git
