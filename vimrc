@@ -24,10 +24,6 @@ filetype plugin on
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 " " check syntax with Ctrl + L
 autocmd FileType php noremap <C-L> :!/usr/bin/env php -l %<CR>
-"++ The vim-task configuration
-autocmd BufNewFile,BufRead todo.txt,*.task,*.tasks setfiletype task
-inoremap <silent> <buffer> <Leader>m <ESC>:call Toggle_task_status()<CR>i
-noremap <silent> <buffer> <Leader>m :call Toggle_task_status()<CR>
 "++Insert date
 iab <expr> ddate strftime("%Y-%m-%d")
 "++ Map for Command-T
@@ -36,3 +32,7 @@ noremap <leader>F <Esc>:CommandTFlush<CR>
 noremap <leader>b <Esc>:CommandTBuffer<CR>
 "++ Map for NERDtree
 noremap <leader>t <Esc>:NERDTree<CR>
+"++ The vim-task configurationi -- The task file needs to be opened as the first file
+autocmd BufNewFile,BufRead todo.txt,*.task,*.tasks setfiletype task
+inoremap <silent> <buffer> <Leader>m <ESC>:call Toggle_task_status()<CR>i
+noremap <silent> <buffer> <Leader>m :call Toggle_task_status()<CR>
